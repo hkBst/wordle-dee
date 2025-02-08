@@ -237,7 +237,7 @@ fn simulate_game(starter: &str, word: &str, debug: bool) -> (bool, usize) {
         guess.reverse();
         if debug {
 			for i in 0..cmp::min(10, guess.len()) {
-				println!("{:2.}. {} G{} Y{} G{} {:.2}%G {:.2}%L",
+				println!("{:2}. {} G{} Y{} G{} {:.2}%G {:.2}%L",
 						i+1, guess[i].0, guess[i].1.0, guess[i].1.1, guess[i].1.2, guess[i].1.3, guess[i].1.4);
 			}
 			
